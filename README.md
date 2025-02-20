@@ -2,6 +2,10 @@
 
 ## Setup Instructions
 
+Ensure you have Python 3 installed on your system before proceeding.
+
+![Python Logo]([url-to-gif.gif](https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif))
+
 Before running the script, execute the following commands in your terminal:
 
 ```sh
