@@ -14,7 +14,8 @@ stations = [53001, 53002, 53003, 53004, 53005, 53006, 53007, 53008,
             53013, 53017, 53018, 53019, 53020, 53022, 53023, 53024, 
             53025, 53026, 53028, 53029]
 
-fields = ["lcm2007", "geology", "catchment-rainfall"] 
+# Visit https://nrfaapps.ceh.ac.uk/nrfa/nrfa-api.html#parameter-station for all available fields
+fields = ["default", "lcm2007", "geology", "catchment-rainfall"] 
 # Land cover map data (2007): lcm2007-woodland, lcm2007-arable-horticultural, 
 # lcm2007-grassland, lcm2007-mountain-heath-bog, lcm2007-urban.
 # Catchment geology data: high-perm-bedrock, moderate-perm-bedrock, low-perm-bedrock, 
@@ -22,7 +23,7 @@ fields = ["lcm2007", "geology", "catchment-rainfall"]
 # Catchment rainfall standard period data: saar-1941-1970, saar-1961-1990.
 formattedFields = ",".join(fields)
 
-for station in stations:
+for station in stations[:1]:
 
     stations_info_url = "{BASE}/station-info?station={STATION}&{FORMAT}&fields={FIELDS}".format(BASE=base_url,
                                                             STATION=station, FORMAT=format, FIELDS=formattedFields)
